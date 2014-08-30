@@ -1,6 +1,6 @@
-<h2>Pages in this wiki:</h2>
+<h2>Available Apps:</h2>
 <ul>
-    <li ng-repeat="page in wikidb.rows">
-        <a ng-href="#/p/{{page.id}}">{{page.key}}</a>
+    <li ng-repeat="log in logdb.rows">
+        <a ng-href="#/log/{{log.key[0]}}/{{log.key[1]}}">{{log.key[1]}} on {{log.key[0]}}</a>
     </li>
 </ul>

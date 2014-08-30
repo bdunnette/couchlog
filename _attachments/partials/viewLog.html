@@ -1,9 +1,2 @@
-<h2>{{page.title}}</h2>
-<div ng-bind-html="page.body"></div>
-<div id="attachments">
-<h3>Attachments</h3>
-<ul>
-  <li ng-repeat="(filename, attachment) in page._attachments"><a ng-href="/sliki/{{page._id}}/{{filename}}">{{filename}}<img width="60px" ng-if="attachment.content_type.indexOf('image') == 0" ng-src="/sliki/{{page._id}}/{{filename}}"></a></li>
-  {{page._attachments}}
-</ul></div>
-<a class="btn btn-primary" ng-href="#/p/{{page._id}}/edit">Edit</a>
+<h3>{{appName}} on {{host}}</h3>
+{{logdb.rows}}

@@ -11,7 +11,7 @@ angular.module('myApp', [
 ])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/logs', {templateUrl: 'partials/logs.html', controller: 'LogListCtrl'});
-  $routeProvider.when('/log/:appId', {templateUrl: 'partials/viewLog.html', controller: 'LogViewCtrl'});
+  $routeProvider.when('/log/:host/:appName', {templateUrl: 'partials/viewLog.html', controller: 'LogViewCtrl'});
   $routeProvider.otherwise({redirectTo: '/logs'});
 }])
 .run(function($rootScope, cornercouch) {
